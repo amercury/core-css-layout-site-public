@@ -9,24 +9,22 @@
 </head>
 
 <body>
-
   <header>
-    <nav>
-      <div class="navs"><a href="#">Главная</a></div>
-      <div class="navs"><a href="#">Технологии</a></div>
-      <div class="navs"><a href="#">Отзывы</a></div>
+    <nav class="container">
+      <div class="navi"><a href="#">Главная</a></div>
+      <div class="navi"><a href="#">Технологии</a></div>
+      <div class="navi"><a href="#">Отзывы</a></div>
     </nav>
   </header>
-
   <main>
-    <section id="technology">
+    <section id="technology" class="container">
       <div class="tech-item"><img src="img/html.png" alt="html"></div>
       <div class="tech-item"><img src="img/arrow.png" alt="arrow"></div>
       <div class="tech-item"><img src="img/css.png" alt="css"></div>
       <div class="tech-item"><img src="img/arrow.png" alt="arrow"></div>
       <div class="tech-item"><img src="img/js.png" alt="js"></div>
     </section>
-    <section id="gallery">
+    <section id="gallery" class="container">
       <div class="image"><img src="img/1.png" alt="1"></div>
       <div class="image"><img src="img/2.png" alt="2"></div>
       <div class="image"><img src="img/3.png" alt="3"></div>
@@ -34,7 +32,7 @@
       <div class="image"><img src="img/5.png" alt="5"></div>
       <div class="image"><img src="img/6.png" alt="6"></div>
     </section>
-    <section id="blog">
+    <section id="blog" class="container">
       <article class="texts">
         <img src="img/7.png" alt="wikipedia">
         <p>WEB-разработка — процедура создания WEB-приложения или WEB-сайта. Основными этапами этого процесса являются
@@ -45,7 +43,7 @@
           также работы по конфигурированию WEB-сервера. </p>
       </article>
       <article class="texts">
-        <img src="img/8.png" alt="react">
+        <img id="react" src="img/8.png" alt="react">
         <p>React (иногда React.js или ReactJS) — JavaScript-библиотека[4] с открытым исходным кодом для разработки
           пользовательских интерфейсов.
 
@@ -65,24 +63,28 @@
           бизнес-проектах и образовательных программах.</p>
       </article>
     </section>
-    <section id="cards">
+    <section id="cards" class="container">
       <div class="card">
         <h3>Отзывы</h3>
-        <p>Самое запоминающееся в Elbrus - это такой формат обучения, когда тебе дают наводку, а ты сам копаешь дальше.
-          Это возможность понять насколько ты замотивирован и насколько ты готов выложиться, чтобы получить желаемое.
-        </p>
+        <div class="description">
+          <p>Самое запоминающееся в Elbrus - это такой формат обучения, когда тебе дают наводку, а ты сам копаешь
+            дальше.
+            Это возможность понять насколько ты замотивирован и насколько ты готов выложиться, чтобы получить желаемое.
+          </p>
+        </div>
         <button class="btn">Подробнее</button>
       </div>
       <div class="card">
         <h3>Отзывы</h3>
-        <p>Javascript forever! Всем кто хочет прокачаться рекомендую этот курс.</p>
+        <div class="description">
+          <p>Javascript forever! Всем кто хочет прокачаться рекомендую этот курс.</p>
+        </div>
         <button class="btn">Подробнее</button>
       </div>
     </section>
   </main>
-
   <footer>
-    <div>@copyright 2020</div>
+    <p>@copyright 2020</p>
   </footer>
 </body>
 
